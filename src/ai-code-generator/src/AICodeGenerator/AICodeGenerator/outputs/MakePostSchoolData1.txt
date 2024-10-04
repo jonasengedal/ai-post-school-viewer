@@ -1,0 +1,35 @@
+[
+  {
+    "Navn": "Ishøj Idrætsefterskole",
+    "KortBeskrivelse": "Ishøj Idrætsefterskole fokuserer på sport og personlig udvikling.",
+    "LangBeskrivelse": "På Ishøj Idrætsefterskole kan eleverne dykke ned i forskellige sportsgrene, mens de udvikler sig både personligt og socialt i et inspirerende læringsmiljø.",
+    "GpsKoordinater": "55.6167, 12.3539",
+    "Adresse": "Sportsvej 15, 2635 Ishøj",
+    "Linjefag": ["Fodbold", "Håndbold", "Svømning", "Atletik"],
+    "Valgfag": ["Dans", "Yoga", "Kost & Ernæring"],
+    "ObligatoriskeFag": ["Dansk", "Matematik", "Engelsk", "Idræt"],
+    "Type": "Sport"
+  },
+  {
+    "Navn": "Slagelse Idrætsefterskole",
+    "KortBeskrivelse": "Slagelse Idrætsefterskole tilbyder et bredt udvalg af sportsgrene.",
+    "LangBeskrivelse": "Med flere moderne faciliteter og dedikerede trænere, giver Slagelse Idrætsefterskole eleverne mulighed for at udvikle deres færdigheder indenfor mange forskellige sportsgrene.",
+    "GpsKoordinater": "55.4028, 11.3540",
+    "Adresse": "Idrætsvej 10, 4200 Slagelse",
+    "Linjefag": ["Basketball", "Volleyball", "Gymnastik", "Badminton"],
+    "Valgfag": ["Klatring", "Crossfit", "Sportspsykologi"],
+    "ObligatoriskeFag": ["Dansk", "Matematik", "Engelsk", "Idræt"],
+    "Type": "Sport"
+  },
+  {
+    "Navn": "Køge Idrætsefterskole",
+    "KortBeskrivelse": "Vægten er på både team- og individuelle sportsgrene.",
+    "LangBeskrivelse": "Køge Idrætsefterskole tilbyder en bred vifte af både team- og individuelle sportsgrene, der understøtter både fysisk og mental udvikling blandt eleverne.",
+    "GpsKoordinater": "55.4581, 12.1827",
+    "Adresse": "Sportsgade 25, 4600 Køge",
+    "Linjefag": ["Tennis", "Golf", "Fodbold", "E-sport"],
+    "Valgfag": ["Martial Arts", "Pilates", "Team Building"],
+    "ObligatoriskeFag": ["Dansk", "Matematik", "Engelsk", "Idræt"],
+    "Type": "Sport"
+  }
+]
