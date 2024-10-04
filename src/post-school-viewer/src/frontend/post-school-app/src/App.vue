@@ -1,7 +1,8 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/post-school">Post School</router-link> |
+    <router-link to="/post-schools">Post Schools</router-link> |
+    <router-link to="/comparison">Comparison</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
