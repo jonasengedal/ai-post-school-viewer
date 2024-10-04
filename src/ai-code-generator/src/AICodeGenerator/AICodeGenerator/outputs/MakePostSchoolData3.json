@@ -1,0 +1,213 @@
+{
+  "efterskoler": [
+    {
+      "Id": 1,
+      "Navn": "Asterions Hus"
+    },
+    {
+      "Id": 2,
+      "Navn": "Bernstorffsminde Efterskole"
+    },
+    {
+      "Id": 3,
+      "Navn": "Dronninglund Efterskole"
+    },
+    {
+      "Id": 4,
+      "Navn": "Efterskolen for Scenekunst"
+    },
+    {
+      "Id": 5,
+      "Navn": "Egeborg Efterskole"
+    },
+    {
+      "Id": 6,
+      "Navn": "Engelsborgskolen"
+    },
+    {
+      "Id": 7,
+      "Navn": "Flakkebjerg Efterskole"
+    },
+    {
+      "Id": 8,
+      "Navn": "Flow Efterskolen"
+    },
+    {
+      "Id": 9,
+      "Navn": "Forlev Efterskole"
+    },
+    {
+      "Id": 10,
+      "Navn": "Fuglebjerg Efterskole"
+    },
+    {
+      "Id": 11,
+      "Navn": "Gerlev Idrætsefterskole"
+    },
+    {
+      "Id": 12,
+      "Navn": "Gram Efterskole"
+    },
+    {
+      "Id": 13,
+      "Navn": "Greve Gymnasium & HF"
+    },
+    {
+      "Id": 14,
+      "Navn": "Hald Ege Efterskole"
+    },
+    {
+      "Id": 15,
+      "Navn": "Halstedhus Efterskole"
+    },
+    {
+      "Id": 16,
+      "Navn": "Herlufsholm Kostskole"
+    },
+    {
+      "Id": 17,
+      "Navn": "HF & VUC Køge Bugt"
+    },
+    {
+      "Id": 18,
+      "Navn": "Holmegaard Efterskole"
+    },
+    {
+      "Id": 19,
+      "Navn": "Høvelte Kirke"
+    },
+    {
+      "Id": 20,
+      "Navn": "Ishøj Gymnasium og HF"
+    },
+    {
+      "Id": 21,
+      "Navn": "Klintsøgaard Efterskole"
+    },
+    {
+      "Id": 22,
+      "Navn": "Københavns Private Gymnasium"
+    },
+    {
+      "Id": 23,
+      "Navn": "Korsør Gymnasium og HF"
+    },
+    {
+      "Id": 24,
+      "Navn": "Kromanns Realskole"
+    },
+    {
+      "Id": 25,
+      "Navn": "Krusbjerghus Efterskolen"
+    },
+    {
+      "Id": 26,
+      "Navn": "Lundby Efterskole"
+    },
+    {
+      "Id": 27,
+      "Navn": "Marie Kruses Skole"
+    },
+    {
+      "Id": 28,
+      "Navn": "Munkegaard Efterskole"
+    },
+    {
+      "Id": 29,
+      "Navn": "Nørre Vedby Efterskole"
+    },
+    {
+      "Id": 30,
+      "Navn": "Nykøbing Katedralskole"
+    },
+    {
+      "Id": 31,
+      "Navn": "Nysted Efterskole"
+    },
+    {
+      "Id": 32,
+      "Navn": "Præstø Skole"
+    },
+    {
+      "Id": 33,
+      "Navn": "Ranum Efterskole College"
+    },
+    {
+      "Id": 34,
+      "Navn": "Ribe Katedralskole"
+    },
+    {
+      "Id": 35,
+      "Navn": "Roskilde Gymnasium"
+    },
+    {
+      "Id": 36,
+      "Navn": "Rødkilde Gymnasium"
+    },
+    {
+      "Id": 37,
+      "Navn": "Rønne Privatskole"
+    },
+    {
+      "Id": 38,
+      "Navn": "Sankt Annæ Gymnasium"
+    },
+    {
+      "Id": 39,
+      "Navn": "Skals Efterskole"
+    },
+    {
+      "Id": 40,
+      "Navn": "Skælskør Gymnasium"
+    },
+    {
+      "Id": 41,
+      "Navn": "Slagelse Gymnasium"
+    },
+    {
+      
+      "Id": 42,
+      "Navn": "Slagslunde Efterskole"
+    },
+    {
+      "Id": 43,
+      "Navn": "Sorø Akademi"
+    },
+    {
+      "Id": 44,
+      "Navn": "Stenlille Efterskole"
+    },
+    {
+      "Id": 45,
+      "Navn": "Sydkystens Privatskole"
+    },
+    {
+      "Id": 46,
+      "Navn": "Tølløse Slots Efterskole"
+    },
+    {
+      "Id": 47,
+      "Navn": "Tornbjerg Gymnasium"
+    },
+    {
+      "Id": 48,
+      "Navn": "Vangeboskolen"
+    },
+    {
+      "Id": 49,
+      "Navn": "Vestjyllands Højskole"
+    },
+    {
+      "Id": 50,
+      "Navn": "Vordingborg Gymnasium"
+    },
+    {
+      "Id": 51,
+      "Navn": "Østerskov Efterskole"
+    },
+    {
+      "Id": 52,
+      "Navn": "Østre Borgerdyd Gymnasium"
+    }
+  ]
+}
