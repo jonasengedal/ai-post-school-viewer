@@ -1,0 +1,3 @@
+﻿Make me a json document of all "efterskoler" at Sjælland in Denmark. Not just some, but all. Be accurate.
+Each "efterskole" must have the properties: Id, Navn.
+Id is a number.

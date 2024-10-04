@@ -1,3 +1,5 @@
-﻿Make me a json document of all "idrætsefterskoler" at Sjælland in Denmark. Add the following properties: Navn, KortBeskrivelse, LangBeskrivelse, GpsKoordinater, Adresse, Linjefag, Valgfag, ObligatoriskeFag, Type. 
-Type property er et enkelt ord der beskriver hovedfokus for efterskolen.
-Do not guess at any information. All information must be accurate for each "efterskole".
+﻿Make me a json document of all "efterskoler" at Sjælland in Denmark. 
+Add the following properties: Navn, KortBeskrivelse, LangBeskrivelse, GpsKoordinater, Adresse, Linjefag, Valgfag, ObligatoriskeFag, Type. 
+'Type' property er et enkelt ord der beskriver hovedfokus for efterskolen.
+Do not guess at any information. All information must be accurate and present for each "efterskole".
+Output must be a json file.
