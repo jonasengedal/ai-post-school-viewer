@@ -1,47 +1,211 @@
 [
   {
     "Id": 1,
-    "Navn": "Ishøj Idrætsefterskole",
-    "KortBeskrivelse": "Ishøj Idrætsefterskole fokuserer på sport og personlig udvikling.",
-    "LangBeskrivelse": "På Ishøj Idrætsefterskole kan eleverne dykke ned i forskellige sportsgrene, mens de udvikler sig både personligt og socialt i et inspirerende læringsmiljø.",
-    "GpsKoordinater": {
-      "Lat": 55.6167,
-      "Long": 12.3539
-    },
-    "Adresse": "Sportsvej 15, 2635 Ishøj",
-    "Linjefag": [ "Fodbold", "Håndbold", "Svømning", "Atletik" ],
-    "Valgfag": [ "Dans", "Yoga", "Kost & Ernæring" ],
-    "ObligatoriskeFag": [ "Dansk", "Matematik", "Engelsk", "Idræt" ],
-    "Type": "Sport"
+    "Navn": "Asterions Hus"
   },
   {
     "Id": 2,
-    "Navn": "Slagelse Idrætsefterskole",
-    "KortBeskrivelse": "Slagelse Idrætsefterskole tilbyder et bredt udvalg af sportsgrene.",
-    "LangBeskrivelse": "Med flere moderne faciliteter og dedikerede trænere, giver Slagelse Idrætsefterskole eleverne mulighed for at udvikle deres færdigheder indenfor mange forskellige sportsgrene.",
-    "GpsKoordinater": {
-      "Lat": 55.4028,
-      "Long": 11.3540
-    },
-    "Adresse": "Idrætsvej 10, 4200 Slagelse",
-    "Linjefag": [ "Basketball", "Volleyball", "Gymnastik", "Badminton" ],
-    "Valgfag": [ "Klatring", "Crossfit", "Sportspsykologi" ],
-    "ObligatoriskeFag": [ "Dansk", "Matematik", "Engelsk", "Idræt" ],
-    "Type": "Sport"
+    "Navn": "Bernstorffsminde Efterskole"
   },
   {
     "Id": 3,
-    "Navn": "Køge Idrætsefterskole",
-    "KortBeskrivelse": "Vægten er på både team- og individuelle sportsgrene.",
-    "LangBeskrivelse": "Køge Idrætsefterskole tilbyder en bred vifte af både team- og individuelle sportsgrene, der understøtter både fysisk og mental udvikling blandt eleverne.",
-    "GpsKoordinater": {
-      "Lat": 55.4581,
-      "Long": 12.1827
-    },
-    "Adresse": "Sportsgade 25, 4600 Køge",
-    "Linjefag": [ "Tennis", "Golf", "Fodbold", "E-sport" ],
-    "Valgfag": [ "Martial Arts", "Pilates", "Team Building" ],
-    "ObligatoriskeFag": [ "Dansk", "Matematik", "Engelsk", "Idræt" ],
-    "Type": "Sport"
+    "Navn": "Dronninglund Efterskole"
+  },
+  {
+    "Id": 4,
+    "Navn": "Efterskolen for Scenekunst"
+  },
+  {
+    "Id": 5,
+    "Navn": "Egeborg Efterskole"
+  },
+  {
+    "Id": 6,
+    "Navn": "Engelsborgskolen"
+  },
+  {
+    "Id": 7,
+    "Navn": "Flakkebjerg Efterskole"
+  },
+  {
+    "Id": 8,
+    "Navn": "Flow Efterskolen"
+  },
+  {
+    "Id": 9,
+    "Navn": "Forlev Efterskole"
+  },
+  {
+    "Id": 10,
+    "Navn": "Fuglebjerg Efterskole"
+  },
+  {
+    "Id": 11,
+    "Navn": "Gerlev Idrætsefterskole"
+  },
+  {
+    "Id": 12,
+    "Navn": "Gram Efterskole"
+  },
+  {
+    "Id": 13,
+    "Navn": "Greve Gymnasium & HF"
+  },
+  {
+    "Id": 14,
+    "Navn": "Hald Ege Efterskole"
+  },
+  {
+    "Id": 15,
+    "Navn": "Halstedhus Efterskole"
+  },
+  {
+    "Id": 16,
+    "Navn": "Herlufsholm Kostskole"
+  },
+  {
+    "Id": 17,
+    "Navn": "HF & VUC Køge Bugt"
+  },
+  {
+    "Id": 18,
+    "Navn": "Holmegaard Efterskole"
+  },
+  {
+    "Id": 19,
+    "Navn": "Høvelte Kirke"
+  },
+  {
+    "Id": 20,
+    "Navn": "Ishøj Gymnasium og HF"
+  },
+  {
+    "Id": 21,
+    "Navn": "Klintsøgaard Efterskole"
+  },
+  {
+    "Id": 22,
+    "Navn": "Københavns Private Gymnasium"
+  },
+  {
+    "Id": 23,
+    "Navn": "Korsør Gymnasium og HF"
+  },
+  {
+    "Id": 24,
+    "Navn": "Kromanns Realskole"
+  },
+  {
+    "Id": 25,
+    "Navn": "Krusbjerghus Efterskolen"
+  },
+  {
+    "Id": 26,
+    "Navn": "Lundby Efterskole"
+  },
+  {
+    "Id": 27,
+    "Navn": "Marie Kruses Skole"
+  },
+  {
+    "Id": 28,
+    "Navn": "Munkegaard Efterskole"
+  },
+  {
+    "Id": 29,
+    "Navn": "Nørre Vedby Efterskole"
+  },
+  {
+    "Id": 30,
+    "Navn": "Nykøbing Katedralskole"
+  },
+  {
+    "Id": 31,
+    "Navn": "Nysted Efterskole"
+  },
+  {
+    "Id": 32,
+    "Navn": "Præstø Skole"
+  },
+  {
+    "Id": 33,
+    "Navn": "Ranum Efterskole College"
+  },
+  {
+    "Id": 34,
+    "Navn": "Ribe Katedralskole"
+  },
+  {
+    "Id": 35,
+    "Navn": "Roskilde Gymnasium"
+  },
+  {
+    "Id": 36,
+    "Navn": "Rødkilde Gymnasium"
+  },
+  {
+    "Id": 37,
+    "Navn": "Rønne Privatskole"
+  },
+  {
+    "Id": 38,
+    "Navn": "Sankt Annæ Gymnasium"
+  },
+  {
+    "Id": 39,
+    "Navn": "Skals Efterskole"
+  },
+  {
+    "Id": 40,
+    "Navn": "Skælskør Gymnasium"
+  },
+  {
+    "Id": 41,
+    "Navn": "Slagelse Gymnasium"
+  },
+  {
+
+    "Id": 42,
+    "Navn": "Slagslunde Efterskole"
+  },
+  {
+    "Id": 43,
+    "Navn": "Sorø Akademi"
+  },
+  {
+    "Id": 44,
+    "Navn": "Stenlille Efterskole"
+  },
+  {
+    "Id": 45,
+    "Navn": "Sydkystens Privatskole"
+  },
+  {
+    "Id": 46,
+    "Navn": "Tølløse Slots Efterskole"
+  },
+  {
+    "Id": 47,
+    "Navn": "Tornbjerg Gymnasium"
+  },
+  {
+    "Id": 48,
+    "Navn": "Vangeboskolen"
+  },
+  {
+    "Id": 49,
+    "Navn": "Vestjyllands Højskole"
+  },
+  {
+    "Id": 50,
+    "Navn": "Vordingborg Gymnasium"
+  },
+  {
+    "Id": 51,
+    "Navn": "Østerskov Efterskole"
+  },
+  {
+    "Id": 52,
+    "Navn": "Østre Borgerdyd Gymnasium"
   }
 ]

@@ -1,5 +1,6 @@
 <template>
   <div ref="map" id="map" style="height: 500px;"></div>
+  <button @click="showComparison">Vis Sammenligning</button>
   <table>
     <tr>
       <th>Navn</th>
@@ -7,15 +8,15 @@
       <th>Beskrivelse</th>
       <th></th>
     </tr>
-    <tr v-for="skole in visibleEfterskoler" :key="skole.id"
-      @mouseover="highlightMarker(skole)" @mouseleave="resetHighlightMarker(skole)">
+    <tr v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
+      @mouseleave="resetHighlightMarker(skole)">
       <td>{{ skole.navn }}</td>
       <td>{{ skole.type }}</td>
       <td>{{ skole.kortBeskrivelse }}</td>
+      <td><button @click="loadPostSchool(skole)">AI Load</button></td>
       <td><button @click="addToComparison(skole)">Sammenlign</button></td>
     </tr>
   </table>
-  <button @click="showComparison">Vis Sammenligning</button>
 </template>
 
 <script>
@@ -35,7 +36,6 @@ export default {
   mounted() {
     this.loadMap();
     this.fetchEfterskoler();
-    this.comparisonList = JSON.parse(localStorage.getItem('comparisonList')) || [];
   },
   methods: {
     loadMap() {
@@ -49,7 +49,8 @@ export default {
       });
     },
     fetchEfterskoler() {
-      fetch('https://localhost:7066/api/efterskoler')
+      console.log("fetch efterskoler");
+      fetch('https://localhost:7066/api/efterskoler', { cache: "no-cache" })
         .then(resp => resp.json())
         .then(data => {
           this.efterskoler = data;
@@ -59,29 +60,50 @@ export default {
     },
     addMarkers() {
       this.efterskoler.forEach(skole => {
-        const marker = L.circleMarker([skole.gpsKoordinater.lat, skole.gpsKoordinater.long], {radius: 5}).addTo(this.map)
-          .bindPopup(`<strong>${skole.navn}</strong><br>${skole.langBeskrivelse}`);
-        this.markers.push({ data: skole, marker: marker });
+        if (skole.gpsKoordinater) {
+          const marker = L.circleMarker([skole.gpsKoordinater.lat, skole.gpsKoordinater.long], { radius: 5 }).addTo(this.map)
+            .bindPopup(`<strong>${skole.navn}</strong><br>${skole.langBeskrivelse ?? ""}`);
+          this.markers.push({ data: skole, marker: marker });
+        }
       });
     },
     filterVisibleEfterskoler() {
       const bounds = this.map.getBounds();
       this.visibleEfterskoler = this.efterskoler.filter(skole =>
-        bounds.contains([skole.gpsKoordinater.lat, skole.gpsKoordinater.long]));
+        !skole.gpsKoordinater || bounds.contains([skole.gpsKoordinater.lat, skole.gpsKoordinater.long]));
     },
     highlightMarker(skole) {
       const selected = this.markers.find(m => m.data.id === skole.id);
-      selected.marker.openPopup();
+      if (selected) {
+        selected.marker.openPopup();
+      }
     },
     resetHighlightMarker(skole) {
       const selected = this.markers.find(m => m.data.id === skole.id);
-      selected.marker.closePopup();
+      if (selected) {
+        selected.marker.closePopup();
+      }
     },
     addToComparison(skole) {
       if (!this.comparisonList.find(el => el.id === skole.id)) {
         this.comparisonList.push(skole);
         localStorage.setItem('comparisonList', JSON.stringify(this.comparisonList));
       }
+    },
+    loadPostSchool(skole) {
+      var url = `https://localhost:7066/api/efterskoler/${skole.id}/load`;
+      console.log(url);
+      fetch(url, {
+        method: 'POST'
+      })
+        .then(resp => resp.json())
+        .then(data => {
+          const pos = this.efterskoler.map(e => e.id).indexOf(skole.id);
+          data.id = skole.id;
+          this.efterskoler[pos] = data;
+          this.addMarkers();
+          this.filterVisibleEfterskoler();
+        });
     },
     showComparison() {
       this.$router.push('/comparison');
