@@ -1,0 +1,2 @@
+Make me the vue code for adding a Leaflet point layer that fetches data from an API.
+The API return a JSON object with a property called GpsKoordinater that is an object with Lat and Long properties..
