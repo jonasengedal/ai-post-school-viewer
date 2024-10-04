@@ -60,7 +60,7 @@ export default {
     addMarkers() {
       this.efterskoler.forEach(skole => {
         const marker = L.circleMarker([skole.gpsKoordinater.lat, skole.gpsKoordinater.long], {radius: 5}).addTo(this.map)
-          .bindPopup(`<strong>${skole.navn}</strong><br>${skole.by}`);
+          .bindPopup(`<strong>${skole.navn}</strong><br>${skole.langBeskrivelse}`);
         this.markers.push({ data: skole, marker: marker });
       });
     },
