@@ -16,6 +16,21 @@
       <td v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
         @mouseleave="resetHighlightMarker(skole)">{{ skole.kortBeskrivelse }}</td>
     </tr>
+    <tr>
+      <th>Linjefag</th>
+      <td v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
+        @mouseleave="resetHighlightMarker(skole)">{{ skole.linjefag.join(' ') }}</td>
+    </tr>
+    <tr>
+      <th>Valgfag</th>
+      <td v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
+        @mouseleave="resetHighlightMarker(skole)">{{ skole.valgfag.join(' ') }}</td>
+    </tr>
+    <tr>
+      <th>Oblgatoriske fag</th>
+      <td v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
+        @mouseleave="resetHighlightMarker(skole)">{{ skole.obligatoriskeFag.join(' ') }}</td>
+    </tr>
   </table>
   <button @click="clearComparison">Ryd sammenligning</button>
   <button @click="showPostSchools">Vis alle skoler</button>
@@ -93,3 +108,13 @@ export default {
   }
 };
 </script>
+
+<style>
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+</style>
