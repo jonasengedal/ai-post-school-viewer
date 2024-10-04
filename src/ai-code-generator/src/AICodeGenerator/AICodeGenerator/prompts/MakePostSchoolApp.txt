@@ -1,0 +1,19 @@
+Make me a Vue application that can list all the "efterskoler" in a table and show them on a Leaflet map.  
+The following "efterskole" properties must be supported: Navn, KortBeskrivelse, LangBeskrivelse, GpsKoordinater, Adresse, Linjefag, Valgfag, ObligatoriskeFag, Type.
+The list and map must be visible at the same time.
+The list must show the properties Navn, By, KortBeskrivelse, Type.
+Zooming in the map will filter the list to only show the "efterskoler" that are visible in the map.
+Hovering an "efterskole" in the list will highlight the "efterskole" in the map and vice versa.
+The map must support toggle fullscreen on/off.
+The list must for each "efterskole" have a button called "Sammenlign".
+When clicking the button called "Sammenlign" the "efterskole" will be added to a list of "efterskoler" to compare. The list must be stored in local storage.
+A button "Vis sammenligning" must open a new page with a comparison table of the "efterskoler" in the list for comparison.
+The comparison table must have the "efterskole" properties as rows and each "efterskole" as columns.
+It must be possible to edit the information of an "efterskole".
+The "efterskoler" must be fetched from an .NET API which you must also provide me the code for.
+Make the C# class for "efterskole".
+Use Bootstrap as layout framework.
+Make a CLI script setting up Vue.
+Make a CLI script for running run the Vue app.
+Make a CLI script for setting up the .NET API
+make a CLI script for running the .NET API.
