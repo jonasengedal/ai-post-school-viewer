@@ -36,6 +36,7 @@ export default {
   mounted() {
     this.loadMap();
     this.fetchEfterskoler();
+    this.comparisonList = JSON.parse(localStorage.getItem('comparisonList')) || [];
   },
   methods: {
     loadMap() {

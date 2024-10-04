@@ -53,8 +53,8 @@ export default {
   mounted() {
     this.loadMap();
     this.efterskoler = JSON.parse(localStorage.getItem('comparisonList')) || [];
-    this.visibleEfterskoler = this.efterskoler;
     this.addMarkers();
+    this.filterVisibleEfterskoler();
   },
   methods: {
     loadMap() {
@@ -69,9 +69,11 @@ export default {
     },
     addMarkers() {
       this.efterskoler.forEach(skole => {
-        const marker = L.circleMarker([skole.gpsKoordinater.lat, skole.gpsKoordinater.long], {radius: 5}).addTo(this.map)
-          .bindPopup(`<strong>${skole.navn}</strong><br>${skole.by}`);
-        this.markers.push({ data: skole, marker: marker });
+        if (skole.gpsKoordinater) {
+          const marker = L.circleMarker([skole.gpsKoordinater.lat, skole.gpsKoordinater.long], { radius: 5 }).addTo(this.map)
+            .bindPopup(`<strong>${skole.navn}</strong><br>${skole.langBeskrivelse ?? ""}`);
+          this.markers.push({ data: skole, marker: marker });
+        }
       });
     },
     filterVisibleEfterskoler() {
@@ -81,11 +83,15 @@ export default {
     },
     highlightMarker(skole) {
       const selected = this.markers.find(m => m.data.id === skole.id);
-      selected.marker.openPopup();
+      if (selected) {
+        selected.marker.openPopup();
+      }
     },
     resetHighlightMarker(skole) {
       const selected = this.markers.find(m => m.data.id === skole.id);
-      selected.marker.closePopup();
+      if (selected) {
+        selected.marker.closePopup();
+      }
     },
     addToComparison(skole) {
       if (!this.comparisonList.find(el => el.id === skole.id)) {
@@ -102,8 +108,9 @@ export default {
     },
     removeFromComparison(id) {
       console.log("Fjern " + id);
-      this.visibleEfterskoler = this.visibleEfterskoler.filter(i => i.id != id);
-      localStorage.setItem('comparisonList', JSON.stringify(this.visibleEfterskoler));
+      this.efterskoler = this.efterskoler.filter(i => i.id != id);
+      localStorage.setItem('comparisonList', JSON.stringify(this.efterskoler));
+      this.filterVisibleEfterskoler();
     }
   }
 };
