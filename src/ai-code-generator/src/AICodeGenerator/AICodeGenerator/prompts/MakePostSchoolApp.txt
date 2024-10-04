@@ -13,7 +13,3 @@ It must be possible to edit the information of an "efterskole".
 The "efterskoler" must be fetched from an .NET API which you must also provide me the code for.
 Make the C# class for "efterskole".
 Use Bootstrap as layout framework.
-Make a CLI script setting up Vue.
-Make a CLI script for running run the Vue app.
-Make a CLI script for setting up the .NET API
-make a CLI script for running the .NET API.
