@@ -4,7 +4,7 @@
     <tr>
       <th>Navn</th>
       <th v-for="skole in visibleEfterskoler" :key="skole.id" @mouseover="highlightMarker(skole)"
-        @mouseleave="resetHighlightMarker(skole)">{{ skole.navn }}</th>
+        @mouseleave="resetHighlightMarker(skole)">{{ skole.navn }} <button @click="removeFromComparison(skole.id)">Fjern</button></th>
     </tr>
     <tr>
       <th>Type</th>
@@ -82,9 +82,13 @@ export default {
       this.$router.push('/post-schools');
     },
     clearComparison() {
-      this.efterskoler = [];
       localStorage.setItem('comparisonList', "[]");
       this.$router.push('/post-schools');
+    },
+    removeFromComparison(id) {
+      console.log("Fjern " + id);
+      this.visibleEfterskoler = this.visibleEfterskoler.filter(i => i.id != id);
+      localStorage.setItem('comparisonList', JSON.stringify(this.visibleEfterskoler));
     }
   }
 };
