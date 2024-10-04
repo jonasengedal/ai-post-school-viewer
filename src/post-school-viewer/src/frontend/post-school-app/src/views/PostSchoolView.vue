@@ -1,23 +1,21 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-8">
-        <div ref="map" id="map" style="height: 500px;"></div>
-      </div>
-      <div class="col-4">
-        <ul class="list-group">
-          <li class="list-group-item" v-for="skole in visibleEfterskoler" :key="skole.id"
-            @mouseover="highlightMarker(skole)" @mouseleave="resetHighlightMarker(skole)">
-            <h5>{{ skole.navn }} ({{ skole.by }})</h5>
-            <p>{{ skole.kortBeskrivelse }}</p>
-            <p><b>Type:</b> {{ skole.type }}</p>
-            <button @click="addToComparison(skole)" class="btn btn-primary">Sammenlign</button>
-          </li>
-        </ul>
-        <button class="btn btn-success mt-3" @click="showComparison">Vis Sammenligning</button>
-      </div>
-    </div>
-  </div>
+  <div ref="map" id="map" style="height: 500px;"></div>
+  <table>
+    <tr>
+      <th>Navn</th>
+      <th>Type</th>
+      <th>Beskrivelse</th>
+      <th></th>
+    </tr>
+    <tr v-for="skole in visibleEfterskoler" :key="skole.id"
+      @mouseover="highlightMarker(skole)" @mouseleave="resetHighlightMarker(skole)">
+      <td>{{ skole.navn }}</td>
+      <td>{{ skole.type }}</td>
+      <td>{{ skole.kortBeskrivelse }}</td>
+      <td><button @click="addToComparison(skole)">Sammenlign</button></td>
+    </tr>
+  </table>
+  <button @click="showComparison">Vis Sammenligning</button>
 </template>
 
 <script>
