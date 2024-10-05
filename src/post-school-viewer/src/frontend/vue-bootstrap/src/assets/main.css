@@ -1,10 +1,25 @@
+@import 'bootstrap/dist/css/bootstrap.css';
 @import './base.css';
 
+:root {
+  --bs-tertiary-bg-rgb: 101, 127, 220;
+}
+
+body {
+  display: flex;
+  place-items: start center;
+}
+
 #app {
-  max-width: 1280px;
+  display: grid;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 1rem;
   font-weight: normal;
+}
+
+#content {
+  display: grid;
+  padding: 1rem;
 }
 
 a,
@@ -22,14 +37,19 @@ a,
 }
 
 @media (min-width: 1024px) {
+
+  #content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    place-items: start center;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  #content {
+    grid-template-columns: 1fr;
   }
 }
