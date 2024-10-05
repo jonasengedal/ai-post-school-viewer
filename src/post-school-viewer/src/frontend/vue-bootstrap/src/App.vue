@@ -1,6 +1,20 @@
 <script setup>
+import  { onMounted, inject } from 'vue';
 import BSTooltip from '@/components/BSTooltip.vue';
 import BSNavbar from '@/components/BSNavbar.vue';
+
+// Inject Bootstrap with the same key as defined in main.js
+// const bootstrap = inject('bootstrap');
+
+// onMounted(() => {
+//   try {
+//     // Expanding the navbar.
+//     const collapse = new bootstrap.Collapse('#navbarSupportedContent');
+//     collapse.show();
+//   } catch (e) {
+//     console.log('Bootstrap error: ', e);
+//   }
+// });
 </script>
 
 <template>
