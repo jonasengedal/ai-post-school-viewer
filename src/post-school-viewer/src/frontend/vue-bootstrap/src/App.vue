@@ -1,6 +1,6 @@
 <script setup>
-import  { onMounted, inject } from 'vue';
-import BSTooltip from '@/components/BSTooltip.vue';
+import { onMounted, inject } from 'vue';
+import BSContent from '@/components/BSContent.vue';
 import BSNavbar from '@/components/BSNavbar.vue';
 
 // Inject Bootstrap with the same key as defined in main.js
@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div id="wrapper">
     <BSNavbar />
-    <BSTooltip />
+    <BSContent />
   </div>
 </template>
 

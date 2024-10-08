@@ -7,18 +7,19 @@
 
 body {
   display: flex;
-  place-items: start center;
+  flex-flow: column wrap;
+  /* place-items: start center; */
 }
 
 #app {
-  display: grid;
+  display: flex;
   margin: 0 auto;
   padding: 0 1rem;
   font-weight: normal;
 }
 
 #content {
-  display: grid;
+  display: flex;
   padding: 1rem;
 }
 

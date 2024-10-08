@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("VueCorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:8080")  // Vue app runs on this port
+        policy.WithOrigins("http://localhost:8080","http://localhost:5173")  // Vue app runs on this port
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
